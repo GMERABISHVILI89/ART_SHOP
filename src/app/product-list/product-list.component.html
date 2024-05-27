@@ -1,0 +1,8 @@
+<div class="product-card">
+    <img [src]="product?.ImageURL" alt="{{ product?.Name }}" class="product-image">
+    <h2 class="product-name">{{ product?.Name }}</h2>
+    <p class="product-description">{{ product?.Description }}</p>
+    <p class="product-price">{{ product?.Price }}</p>
+    <button class="view-details" (click)="viewProduct()">View Details</button>
+  </div>
+  

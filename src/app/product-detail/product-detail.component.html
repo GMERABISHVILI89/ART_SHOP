@@ -1,0 +1,12 @@
+<div class="product-detail">
+    <div class="product-image">
+      <img [src]="product?.ImageURL" alt="{{ product?.Name }}">
+    </div>
+    <div class="product-info">
+      <h2>{{ product?.Name }}</h2>
+      <p class="product-description">{{ product?.Description }}</p>
+      <p class="product-price">{{ product?.Price }}</p>
+      <button class="add-to-cart" (click)="addToCart(product)">Add to Cart</button>
+    </div>
+  </div>
+  

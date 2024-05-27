@@ -1,0 +1,17 @@
+<div class="cart-container">
+  <h2>Your Cart</h2>
+  <div *ngIf="cartItems.length > 0; else emptyCart">
+    <div class="cart-item" *ngFor="let item of cartItems">
+      <img [src]="item.ImageURL" alt="{{ item.Name }}" class="item-image">
+      <div class="item-details">
+        <h3>{{ item.Name }}</h3>
+        <p>{{ item.Description }}</p>
+        <p class="item-price">${{ item.Price }}</p>
+        <button (click)="removeFromCart(item)">Remove</button>
+      </div>
+    </div>
+  </div>
+  <ng-template #emptyCart>
+    <p>Your cart is empty.</p>
+  </ng-template>
+</div>

@@ -1,0 +1,33 @@
+.admin-panel {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .admin-panel h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-panel form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .admin-panel label {
+    margin: 10px 0 5px;
+  }
+  
+  .admin-panel input,
+  .admin-panel textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .admin-panel button {
+    align-self: center;
+    padding: 10px 20px;
+  }
+  

@@ -1,0 +1,19 @@
+<div class="admin-panel">
+    <h1>Admin Panel</h1>
+    <form (ngSubmit)="addProduct()">
+      <label for="name">Product Name:</label>
+      <input type="text" id="name" [(ngModel)]="product.Name" name="name" required>
+      
+      <label for="description">Description:</label>
+      <textarea id="description" [(ngModel)]="product.Description" name="description" required></textarea>
+      
+      <label for="price">Price:</label>
+      <input type="number" id="price" [(ngModel)]="product.Price" name="price" required>
+      
+      <label for="stock">Stock:</label>
+      <input type="number" id="stock" [(ngModel)]="product.Stock" name="stock" required>
+      
+      <button type="submit">Add Product</button>
+    </form>
+  </div>
+  
